@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: georgia;
+}
+
+
+body{
+    background-image: url(images/melange-poudre.png);
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: auto 3rem;
+    color: white;
+    font-family: algerian;
+    font-size: 2em;
+    cursor: pointer;
+    font-weight: 600;   
+}
+
+span{
+    color: yellow;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 3rem;
+    position: relative;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+}
+
+nav ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: white;
+    transition: 0.6s ease-out;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h1{
+    color: white;
+    margin: 0.5rem;
+    font-size: 5em;
+    font-weight: 800;
+}
+
+.content p{
+    color: white;
+    font-size: 2em;
+    background-color: black;
+    border-radius: 20px;
+}
+
+em{
+    color: green;
+}
+
+.content h1 span,p span{
+    color: blue;
+}
+
+button{
+    width: 200px;
+    margin: 2rem ;
+    padding: 1rem;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease-out;
+}
+
+button:hover{
+    box-shadow: inset 200px 0 0 rgb(0, 2, 0);
+}
+
+button a{
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia;
+}
+
